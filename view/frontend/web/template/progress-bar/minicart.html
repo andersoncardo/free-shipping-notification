@@ -1,0 +1,6 @@
+<div class="component-wrapper" data-bind="if: getTotalCartItems() > 0">
+    <span class="info" data-bind="text: getFreeShippingInfo()"></span>
+    <div class="progress" id="progress">
+        <div class="progress-active" id="child-progress" data-bind="style: { width: getPercentage() + '%' }"></div>
+    </div>
+</div>

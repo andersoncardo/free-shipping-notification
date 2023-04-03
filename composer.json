@@ -1,0 +1,22 @@
+{
+  "name": "cardoso/free-shipping-notification",
+  "version": "1.0.0",
+  "description": "Adds infor about remaining amout to reach free shipping",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-customer": "102.0.*",
+    "magento/module-quote": "101.1.*"
+  },
+  "license": [
+    ""
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Cardoso\\FreeShippingNotification\\": ""
+    }
+  }
+}

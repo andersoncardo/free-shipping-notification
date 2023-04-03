@@ -1,0 +1,11 @@
+<div id="block-free-shipping" data-bind="scope:'minicart-free-shipping'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+ {
+     "#block-free-shipping": {
+         "Magento_Ui/js/core/app": <?php /* @escapeNotVerified */ echo $block->getJsLayout();?>
+     }
+ }
+</script>

@@ -1,0 +1,50 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header-wrapper">
+            <referenceBlock name="minicart">
+                <block class="Magento\Framework\View\Element\Template"
+                       name="minicart.shipping.progressbar"
+                       as="minicart.shipping.progressbar"
+                       template="Cardoso_FreeShippingNotification::minicart/progress-bar.phtml"
+                       ifconfig="free_shipping_notify/general/display_minicart"
+                       before="-">
+                    <arguments>
+                        <argument name="jsLayout" xsi:type="array">
+                            <item name="components" xsi:type="array">
+                                <item name="minicart-free-shipping" xsi:type="array">
+                                    <item name="component" xsi:type="string">Cardoso_FreeShippingNotification/js/view/progress-bar</item>
+                                    <item name="config" xsi:type="array">
+                                        <item name="template" xsi:type="string">Cardoso_FreeShippingNotification/progress-bar/minicart</item>
+                                        <item name="maxPrice" xsi:type="helper" helper="Cardoso\FreeShippingNotification\Model\Config::getMaxPrice"/>
+                                    </item>
+                                </item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+            </referenceBlock>
+        </referenceContainer>
+        <referenceBlock name="header">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="header.shipping.progressbar"
+                   as="header.shipping.progressbar"
+                   template="Cardoso_FreeShippingNotification::header/progress-bar.phtml"
+                   ifconfig="free_shipping_notify/general/display_header"
+                   before="-">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="header-free-shipping" xsi:type="array">
+                                <item name="component" xsi:type="string">Cardoso_FreeShippingNotification/js/view/progress-bar</item>
+                                <item name="config" xsi:type="array">
+                                    <item name="template" xsi:type="string">Cardoso_FreeShippingNotification/progress-bar/header</item>
+                                    <item name="maxPrice" xsi:type="helper" helper="Cardoso\FreeShippingNotification\Model\Config::getMaxPrice"/>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

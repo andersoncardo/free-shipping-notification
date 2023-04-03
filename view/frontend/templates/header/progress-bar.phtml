@@ -1,0 +1,12 @@
+<div id="header-block-free-shipping" data-bind="scope:'header-free-shipping'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<div id="suggestions" style="display: none">
+</div>
+<script type="text/x-magento-init">
+ {
+     "#header-block-free-shipping": {
+         "Magento_Ui/js/core/app": <?php /* @escapeNotVerified */ echo $block->getJsLayout();?>
+     }
+ }
+</script>

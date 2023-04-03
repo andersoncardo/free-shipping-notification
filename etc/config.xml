@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <free_shipping_notify>
+            <general>
+                <max_price/>
+                <display_header/>
+                <display_minicart/>
+                <suggest_products/>
+            </general>
+        </free_shipping_notify>
+    </default>
+</config>
